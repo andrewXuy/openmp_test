@@ -11,7 +11,7 @@ cc_binary(
 
 extra_action(
     name = "extractor",
-    cmd = ("/home/werider/kythe_b1/kythe-v0.0.52/extractors/bazel_cxx_extractor " +
+    cmd = ("/opt/kythe/extractors/bazel_cxx_extractor " +
            "$(EXTRA_ACTION_FILE) $(output $(ACTION_ID).cxx.kzip) $(location :vnames.json)"),
     data = [":vnames.json"],
     out_templates = ["$(ACTION_ID).cxx.kzip"],
