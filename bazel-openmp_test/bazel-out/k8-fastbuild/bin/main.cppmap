@@ -1,7 +1,0 @@
-module "//:main" {
-  export *
-  use "@bazel_tools//tools/cpp:malloc"
-  use "crosstool"
-}
-extern module "@bazel_tools//tools/cpp:malloc" "../../../bazel-out/k8-fastbuild/bin/external/bazel_tools/tools/cpp/malloc.cppmap"
-extern module "crosstool" "../../../external/local_config_cc/module.modulemap"
