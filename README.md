@@ -3,10 +3,12 @@ This is a demo of openmp + bazel + kythe
 
 Make sure kythe release placed at /opt/kythe
 
-Without Kythe
+*Without Kythe*
+
 bazel build --linkopt="-fopenmp" //...
 
-With Kythe
+*With Kythe*
+
 bazel build --linkopt="-fopenmp" --experimental_action_listener=:extract_cxx //...
 
 error: unsupported option '-fopenmp'
